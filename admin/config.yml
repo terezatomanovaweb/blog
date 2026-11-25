@@ -2,7 +2,8 @@ backend:
   name: github
   repo: terezatomanovaweb/blog
   branch: main
-  base_url: https://sveltia-cms-auth.okklania.workers.dev
+  auth_type: additions
+  base_url: https://sveltia-cms-additions.terezatomanovaweb.workers.dev
 
 media_folder: "images"
 public_folder: "/images"
