@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: olfounder/forms
+  repo: terezatomanovaweb/blog
   branch: main
   base_url: https://sveltia-cms-auth.okklania.workers.dev
 
@@ -16,33 +16,35 @@ collections:
         file: "posts.json"
         format: "json"
         fields:
-          - name: "posts"
-            label: "Posts"
+          - name: "blog"
+            label: "Blog"
             widget: "list"
             fields:
-              - { name: "category", label: "Category", widget: "string" }
-              - { name: "title", label: "Title", widget: "string" }
-              - { name: "description", label: "Description", widget: "text" }
-              - { name: "date", label: "Date", widget: "string" }
+              - { name: "en-heading", label: "name", widget: "string" }
+              - { name: "en-date", label: "Date", widget: "date and optionally place" }
+              - { name: "en-description", label: "description", widget: "text" }
+              - { name: "en-details-heading-1", label: "title 1", widget: "string", required: false }
+              - { name: "en-details-text-1", label: "Text 1", widget: "text", required: false }
+              - { name: "en-details-heading-2", label: "title 2", widget: "string", required: false }
+              - { name: "en-details-text-2", label: "Text 2", widget: "text", required: false }
+              - { name: "en-link-label", label: "Link Label", widget: "string", required: false }
+              - { name: "en-link", label: "Link", widget: "string", required: false }
+
+              - { name: "cs-heading", label: "název", widget: "string" }
+              - { name: "cs-description", label: "popis", widget: "text" }
+              - { name: "cs-details-heading-1", label: "nadpis 1", widget: "string", required: false }
+              - { name: "cs-details-text-1", label: "Text 1", widget: "text", required: false }
+              - { name: "cs-details-heading-2", label: "nadpis 2", widget: "string", required: false }
+              - { name: "cs-details-text-2", label: "Text 2", widget: "text", required: false }
+              - { name: "cs-link-label", label: "nápis na tlačítku", widget: "string", required: false }
+              - { name: "cs-link", label: "odkaz", widget: "string", required: false }
               
-              - { name: "heading_1", label: "Heading 1", widget: "string", required: false }
-              - { name: "text_1", label: "Text 1", widget: "text", required: false }
-              
-              - { name: "heading_2", label: "Heading 2", widget: "string", required: false }
-              - { name: "text_2", label: "Text 2", widget: "text", required: false }
-              
-              - { name: "heading_3", label: "Heading 3", widget: "string", required: false }
-              - { name: "text_3", label: "Text 3", widget: "text", required: false }
-              
-              - { name: "image_1", label: "Image 1", widget: "image", required: false }
-              - { name: "image_2", label: "Image 2", widget: "image", required: false }
-              - { name: "image_3", label: "Image 3", widget: "image", required: false }
-              - { name: "image_4", label: "Image 4", widget: "image", required: false }
-              - { name: "image_5", label: "Image 5", widget: "image", required: false }
-              - { name: "image_6", label: "Image 6", widget: "image", required: false }
-              - { name: "image_7", label: "Image 7", widget: "image", required: false }
-              - { name: "image_8", label: "Image 8", widget: "image", required: false }
-              - { name: "image_9", label: "Image 9", widget: "image", required: false }
-              
-              - { name: "link_label", label: "Link Label", widget: "string", required: false }
-              - { name: "link", label: "Link URL", widget: "string", required: false }
+              - { name: "photo1", label: "Image 1", widget: "image", required: false }
+              - { name: "photo2", label: "Image 2", widget: "image", required: false }
+              - { name: "photo3", label: "Image 3", widget: "image", required: false }
+              - { name: "photo4", label: "Image 4", widget: "image", required: false }
+              - { name: "photo5", label: "Image 5", widget: "image", required: false }
+              - { name: "photo6", label: "Image 6", widget: "image", required: false }
+              - { name: "photo7", label: "Image 7", widget: "image", required: false }
+              - { name: "photo8", label: "Image 8", widget: "image", required: false }
+              - { name: "photo9", label: "Image 9", widget: "image", required: false }
